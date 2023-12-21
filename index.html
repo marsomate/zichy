@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="giftStyle.css">
+    <title>Karácsonyi Ajándék</title>
+</head>
+<body>
+    <div class="header">
+        <h1>Gratulálok, megtaláltál egy ajándékot!</h1>
+    </div>
+
+    <a>
+        <img src="gift.gif" alt="Karácsonyi Ajándék" class="gift-icon" id="giftImage">
+    </a>
+
+    <script>
+        // Ha továbbra is szükséges a kattintásra irányítás, akkor hagyhatod az alábbi részt
+        document.querySelector('#giftImage').addEventListener('click', function() {
+            window.open('Gifts/14.pdf', '_blank');
+            window.open('Gifts/15.pdf', '_blank');
+            window.open('Gifts/16.pdf', '_blank');            
+        });
+    </script>
+
+<button onclick="showPopup()">Tippek</button>
+
+<div class="popup" id="popup">
+    <p>Szeretlek, de nem kapsz még segítséget😊</p>
+    <button onclick="closePopup()">Bezárás</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
